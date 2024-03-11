@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<!-- File name and document purpose --> 
+<html lang = "en">   
+    <head>     
+        <title> A title for the document </title>
+        <meta charset = "utf-8" />     
+        <!--include external resources here like adsense, javascript, styles-->
+    </head>   
+    <body>   
+        <form id="myForm" action="">
+            <label for="username">
+                Username: <input type="text" id="username" name="username" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="password">
+                Password: <input type="password" id="password" name="password" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="email">
+                Email: <input type="email" id="email" name="email" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="telephone">
+                Telephone: <input type="tel" id="telephone" name="telephone" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="page">
+                Website: <input type="url" id="page" name="homepage" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="house">
+                House: <input type="number" id="house" name="house" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="date">
+                Current date: <input type="date" id="date" name="date" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="month">
+                Last month: <input type="month" id="month" name="month" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="week">
+                Current Week: <input type="week" id="week" name="week" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="color">
+                Favourite Color: <input type="color" id="color" name="color" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="file">
+                Photo: <input type="file" accept="image/*" id="file" name="photo" />    
+            </label>
+            <br/>
+            <br/>
+            <label for="laptop">
+                Laptop <input type="checkbox" id="laptop" name="laptop" value="Laptop" />    
+            </label>
+            <label for="mobile">
+                Mobile <input type="checkbox" id="mobile" name="mobile" value='Mobile' />    
+            </label>
+            <br/>
+            <br/>
+            <label for="male">
+                Male <input type="radio" id="male" name="gender" value="Male" />    
+            </label>
+            <label for="female">
+                Female <input type="radio" id="female" name="gender" value="Female" />    
+            </label>
+            <br/>
+            <br/>
+            <input type="reset" id="reset" value="Reset" />
+            <input type="button" id="button" onclick="console.log(document.getElementById('myForm').elements[0])" value="Alert" />
+            <input type="submit" id="submit" value="submit" />    
+        </form>
+    </body> 
+</html>
