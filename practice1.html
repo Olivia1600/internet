@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+    .dice {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+    }
+  </style>
+    <title>Practice problems</title>
+</head>
+<body>
+    <main>
+            <ol type="1">
+        <h1>Practice 1</h1>
+    
+<p>
+    <li>
+Which of the following is not a valid IP address:
+</li>
+<ol type="1">
+<li>172.168.0.1</li>
+<li>172.168.0.0.1</li>
+<li>255.255.255.255</li>
+<li>256.255.0.1</li>
+</ol>
+solution: The wrong options are 2 and 4
+</p>
+<p>
+    <li>
+If it were allowed to use 36 bit IP addresses, how many unique IP address would be there?
+</li>
+solution: 2^36 = 68,719,476,736
+</p>
+<li>
+<p>If you want to edit an existing document, which is the right HTTP method to use:</p>
+</li>
+<ol type="1">
+<li>GET</li>
+<li>POST</li>
+<li>PUT</li>
+<li>DELETE</li>
+<pre>
+solution: PUT
+<img src="http-method.png">
+</pre>
+</ol>
+<pre>
+    <li>
+        Find errors in the following HTML code:
+    </li>
+h1Quantum Computation/H1
+pThere are various disciplines in quantum computation.p
+</li>
+<pre>
+The closing tag for the H1 element should be in lowercase. HTML tags are case-insensitive, 
+but it's a best practice to use lowercase for consistency.
+
+The closing tag for the p element is missing a forward slash (/) before the tag name.
+</pre>
+</pre>
+<pre>
+    <li>
+        Correct the document structure. 
+    </li>
+    &lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/head&gt;
+&lt;article&gt;
+    &lt;html&gt;
+    &lt;/html&gt;
+&lt;/article&gt;
+&lt;title&gt;My Page&lt;/title&gt;
+
+</pre>
+<pre>
+    <hr>
+solution
+
+    &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;article&gt;
+        &lt;!-- Content of the article goes here --&gt;
+    &lt;/article&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+</pre>
+<p>
+    <li>
+Which of the tags has href as attribute
+    </li>
+    <ol type="1">
+        <li>a</li>
+        <li>img</li>
+        <li>link</li>
+        <li>input</li>
+Soulution: a,link
+</p>
+<p>
+    <li>
+Which of the tags has src as attribute
+</li>
+<ol type="1">   
+    <li>a</li>
+    <li>link</li>
+    <li>img</li>
+    <li>input</li>
+    <li>source</li>
+    <li>audio</li>
+    <li>vedio</li>
+    <li>table</li>
+</ol>
+solution: 
+img
+<pre>
+    exmaple
+    &lt;img src="image.jpg" alt="Description"&gt;
+
+</pre>
+source
+<pre>
+    exmaple
+
+    &lt;video&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;source src="video.webm" type="video/webm"&gt;
+    &lt;/video&gt;
+
+</pre>
+
+audio
+<pre>
+    exmaple
+    &lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mp3"&gt;
+    &lt;/audio&gt;
+</pre>
+script
+<pre>
+    example 
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+
+
+</pre>
+</p>
+<p>
+    <li>
+
+    Create a table that shows possible outcomes of rolling two die. Fill the cells with random outcomes. Either use html entities or images for the die face.
+    </li>
+    <div class="dice">&#9856;</div>
+    
+</p>
+
+<p>
+    <li>
+    Create a definition list showing state names (as dt) and at least two cities (as dd) in each state.
+</li>
+</p>
+<dl>
+    <dt>Alabama</dt>
+    <dd>Birmingham</dd>
+    <dd>Montgomery</dd>
+    
+    <dt>Alaska</dt>
+    <dd>Anchorage</dd>
+    <dd>Juneau</dd>
+    
+    <dt>Arizona</dt>
+    <dd>Phoenix</dd>
+    <dd>Tucson</dd>
+    
+    <dt>Arkansas</dt>
+    <dd>Little Rock</dd>
+    <dd>Fort Smith</dd>
+    
+    <dt>California</dt>
+    <dd>Los Angeles</dd>
+    <dd>San Francisco</dd>
+    
+    <dt>Colorado</dt>
+    <dd>Denver</dd>
+    <dd>Colorado Springs</dd>
+  </dl>
+  <p>
+    <li>
+        Solve the above problem using nested lists: one list for state names and inside each item another list for cities.
+    </li>
+    <ul>
+        <li>
+          Alabama
+          <ul>
+            <li>Birmingham</li>
+            <li>Montgomery</li>
+          </ul>
+        </li>
+        
+        <li>
+          Alaska
+          <ul>
+            <li>Anchorage</li>
+            <li>Juneau</li>
+          </ul>
+        </li>
+        
+        <li>
+          Arizona
+          <ul>
+            <li>Phoenix</li>
+            <li>Tucson</li>
+          </ul>
+        </li>
+        
+        <li>
+          Arkansas
+          <ul>
+            <li>Little Rock</li>
+            <li>Fort Smith</li>
+          </ul>
+        </li>
+        
+        <li>
+          California
+          <ul>
+            <li>Los Angeles</li>
+            <li>San Francisco</li>
+          </ul>
+        </li>
+        
+        <li>
+          Colorado
+          <ul>
+            <li>Denver</li>
+            <li>Colorado Springs</li>
+          </ul>
+        </li>
+      </ul>
+  </p>
+  <p>
+    <li>
+        Create a form for setting up profile of a costumer. It should take inputs for name, age, gender, photo, house number, street, locality, city, zip code, state. It should contain a submit button.
+    </li>
+
+<h1>Customer Profile Setup</h1>
+
+<form action="/submit-profile" method="post" enctype="multipart/form-data">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+  
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" name="age" required><br><br>
+  
+  <label for="gender">Gender:</label><br>
+  <select id="gender" name="gender" required>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br><br>
+  
+  <label for="photo">Photo:</label><br>
+  <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+  
+  <label for="house_number">House Number:</label><br>
+  <input type="text" id="house_number" name="house_number" required><br><br>
+  
+  <label for="street">Street:</label><br>
+  <input type="text" id="street" name="street" required><br><br>
+  
+  <label for="locality">Locality:</label><br>
+  <input type="text" id="locality" name="locality" required><br><br>
+  
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city" required><br><br>
+  
+  <label for="zip_code">Zip Code:</label><br>
+  <input type="text" id="zip_code" name="zip_code" required><br><br>
+  
+  <label for="state">State:</label><br>
+  <input type="text" id="state" name="state" required><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+  </p>
+</main>
+</ol>
+</body>
+</html>
