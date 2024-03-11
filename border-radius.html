@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-radius</title>
+    <style>
+    .containerG {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 1px solid teal;
+    padding: 0.5em;
+    width: 10%;
+    height: 50px;
+}
+.round {
+    border-radius: 50%;
+}
+.opposite {
+    border-radius: 50% 50%;
+}
+.different {
+    border-radius: 10% 20% 30% 40%;
+}
+
+    </style>
+</head>
+<body>
+    <section class="containerG">
+        <div class="cell round centerFlex">round</div>
+        <div class="cell opposite  centerFlex">opposite</div>
+        <div class="cell different centerFlex">different</div>
+    </section>
+</body>
+</html>
