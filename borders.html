@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borders in css</title>
+    <style>
+        .container {
+    box-sizing: border-box;
+    height: 120px;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 2px solid;
+    padding: 0.5em;
+}
+.none {
+    border: 2px none red;
+}
+.hidden {
+    border: 2px hidden red;
+}
+.dotted {
+    border: 2px dotted red;
+}
+.dashed {
+    border: 2px dashed red;
+}
+.solid {
+    border: 2px solid red;
+}
+.double {
+    border: 2px double red;
+}
+.groove {
+    border: 2px groove red;
+}
+.ridge {
+    border: 2px ridge red;
+}
+.inset {
+    border: 2px inset red;
+}
+.outset {
+    border: 2px outset red;
+}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="cell none centerFlex">none</div>
+        <div class="cell hidden centerFlex">hidden</div>
+        <div class="cell dotted centerFlex">dotted</div>
+        <div class="cell dashed centerFlex">dashed</div>
+        <div class="cell solid centerFlex">solid</div>
+        <div class="cell double centerFlex">double</div>
+        <div class="cell groove centerFlex">groove</div>
+        <div class="cell ridge centerFlex">ridge</div>
+        <div class="cell inset centerFlex">inset</div>
+        <div class="cell outset centerFlex">outset</div>
+    </section>
+</body>
+</html>
